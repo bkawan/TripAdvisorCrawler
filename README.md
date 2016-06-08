@@ -20,3 +20,15 @@ $ scrapy crawl tripAllLocation -o all_location_link.csv
 ### To extract all the location link into json
 
 $ scrapy crawl tripAllLocation -o all_location_link.json
+
+
+
+# TripAdvisorAllLocationAllAttraction.py
+
+### To extract all the location link into csv
+
+$ scrapy crawl tripAllLocation -o all-attraction-list-only-first-pagi.csv
+
+### To extract all the location link into json
+
+$ scrapy crawl tripAllLocation -o all-attraction-list-only-first-pagi.json
