@@ -27,6 +27,9 @@ class TripadvisorItem(scrapy.Item):
     phone = scrapy.Field()
     rank = scrapy.Field()
 
-    # location_link = scrapy.Field()
-    # state = scrapy.Field()
+    state_attraction_link = scrapy.Field()
+    state_name = scrapy.Field()
+    state_attraction_name = scrapy.Field()
+
+
 
