@@ -25,10 +25,11 @@ class TripadvisorSpider(scrapy.Spider):
             yield scrapy.Request(link, callback=self.parse_each_attraction)
 
         sites = sel.xpath('//a[contains(text(), "Next")]/@href').extract()
-        for si in sites:
-            if si:
-                ss = response.urljoin(si)
-                yield scrapy.Request(ss, callback=self.parse_location)
+        for site in sites:
+            if not site:
+                continue
+            site_link = response.urljoin(si)
+            yield scrapy.Request(site_link, callback=self.parse_location)
 
         print("************** First **************************")
 
