@@ -11,3 +11,5 @@ $ scrapy crawl tripadvisor -o attraction_list.json
 
 $ scrapy crawl tripadvisor -o attraction_list.csv
 
+## Happy Crawling :-)
+
